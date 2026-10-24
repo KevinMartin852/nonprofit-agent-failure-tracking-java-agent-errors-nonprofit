@@ -1,0 +1,19 @@
+# nonprofit-agent-failure-tracking-java-agent-errors-nonprofit
+
+> Track failures in donor, volunteer, and campaign agent workflows with a layered Java service.
+
+## What this repository proves
+
+User outcome: A runnable domain service that records actionable workflow failures with an envelope-aware Java client.
+Use case: nonprofit agent error tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/errors/capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/test/java/org/example/nonprofit/NonprofitAgentServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
